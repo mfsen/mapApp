@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_998ee19652bce7d9510e860a9801ca1d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_998ee19652bce7d9510e860a9801ca1d" ></div>
+        
+</body>
+<script>    
+    
+            var map_998ee19652bce7d9510e860a9801ca1d = L.map(
+                "map_998ee19652bce7d9510e860a9801ca1d",
+                {
+                    center: [26.0, 35.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3fd12eb0f2a3526dc1a21b5904fa6251 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}.png",
+                {"attribution": "\u0026copy GeoBasis-DE /\u003ca href=\"http://www.bkg.bund.de\"\u003eBKG\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_998ee19652bce7d9510e860a9801ca1d);
+        
+    
+            var tile_layer_57a19538bcd14c6d321488982bc28fec = L.tileLayer(
+                "http://services.arcgisonline.com/ArcGIS/rest/services/Specialty/World_Navigation_Charts/MapServer/tile/{z}/{y}/{x}.png",
+                {"attribution": "\u0026copy GeoBasis-DE /\u003ca href=\"http://www.bkg.bund.de\"\u003eBKG\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_998ee19652bce7d9510e860a9801ca1d);
+        
+    
+            var tile_layer_54afa2573503214183fe833e3fa5f804 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Reference/MapServer/tile/{z}/{y}/{x}.png",
+                {"attribution": "\u0026copy GeoBasis-DE /\u003ca href=\"http://www.bkg.bund.de\"\u003eBKG\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_998ee19652bce7d9510e860a9801ca1d);
+        
+    
+            var tile_layer_49eb7607c7412ed60cfc8c3ce8541846 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/NatGeo_World_Map/MapServer/MapServer/tile/{z}/{y}/{x}.png",
+                {"attribution": "\u0026copy GeoBasis-DE /\u003ca href=\"http://www.bkg.bund.de\"\u003eBKG\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_998ee19652bce7d9510e860a9801ca1d);
+        
+    
+            var tile_layer_d3989ff65700c0f2b87d4c412df286f4 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}.png",
+                {"attribution": "\u0026copy GeoBasis-DE /\u003ca href=\"http://www.bkg.bund.de\"\u003eBKG\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_998ee19652bce7d9510e860a9801ca1d);
+        
+    
+            var tile_layer_5d7c0af0a98c01fc5a2da5fe98bfc227 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Physical_Map/MapServer/MapServer/tile/{z}/{y}/{x}.png",
+                {"attribution": "\u0026copy GeoBasis-DE /\u003ca href=\"http://www.bkg.bund.de\"\u003eBKG\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_998ee19652bce7d9510e860a9801ca1d);
+        
+    
+            var tile_layer_9c35af2e3ef8ebbf0a2987182eeacb65 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Shaded_Relief/MapServer/MapServer/tile/{z}/{y}/{x}.png",
+                {"attribution": "\u0026copy GeoBasis-DE /\u003ca href=\"http://www.bkg.bund.de\"\u003eBKG\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_998ee19652bce7d9510e860a9801ca1d);
+        
+    
+            var tile_layer_49d3c750e529603221d60437ac8f2a81 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/MapServer/tile/{z}/{y}/{x}.png",
+                {"attribution": "\u0026copy GeoBasis-DE /\u003ca href=\"http://www.bkg.bund.de\"\u003eBKG\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_998ee19652bce7d9510e860a9801ca1d);
+        
+    
+            var tile_layer_a8884e63b188724a8ebdda7a0dc254f2 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Terrain_Base/MapServer/MapServer/tile/{z}/{y}/{x}.png",
+                {"attribution": "\u0026copy GeoBasis-DE /\u003ca href=\"http://www.bkg.bund.de\"\u003eBKG\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_998ee19652bce7d9510e860a9801ca1d);
+        
+    
+            var tile_layer_39da6cf70664b5ea6d9189673076e046 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/MapServer/tile/{z}/{y}/{x}.png",
+                {"attribution": "\u0026copy GeoBasis-DE /\u003ca href=\"http://www.bkg.bund.de\"\u003eBKG\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_998ee19652bce7d9510e860a9801ca1d);
+        
+    
+            var macro_element_2f9028a9735607da7219b7560f98e324 = L.tileLayer.wms(
+                "http://mfsai.xyz/geoserver/trharita/wms",
+                {"attribution": "\u0026copy GeoBasis-DE /\u003ca href=\"http://www.bkg.bund.de\"\u003eBKG\u003c/a\u003e", "format": "image/png", "layers": "trharita:ilce", "styles": "", "transparent": true, "version": "1.1.1"}
+            ).addTo(map_998ee19652bce7d9510e860a9801ca1d);
+        
+    
+            var layer_control_20fbc966ac411247185cd1dcd723c724 = {
+                base_layers : {
+                    "World_Ocean_Base" : tile_layer_3fd12eb0f2a3526dc1a21b5904fa6251,
+                    "World_Navigation_Charts" : tile_layer_57a19538bcd14c6d321488982bc28fec,
+                    "World_Ocean_Reference" : tile_layer_54afa2573503214183fe833e3fa5f804,
+                    "NatGeo_World_Map" : tile_layer_49eb7607c7412ed60cfc8c3ce8541846,
+                    "World_Imagery" : tile_layer_d3989ff65700c0f2b87d4c412df286f4,
+                    "World_Physical_Map" : tile_layer_5d7c0af0a98c01fc5a2da5fe98bfc227,
+                    "World_Shaded_Relief" : tile_layer_9c35af2e3ef8ebbf0a2987182eeacb65,
+                    "World_Street_Map" : tile_layer_49d3c750e529603221d60437ac8f2a81,
+                    "World_Terrain_Base" : tile_layer_a8884e63b188724a8ebdda7a0dc254f2,
+                    "World_Topo_Map" : tile_layer_39da6cf70664b5ea6d9189673076e046,
+                },
+                overlays :  {
+                    "macro_element_2f9028a9735607da7219b7560f98e324" : macro_element_2f9028a9735607da7219b7560f98e324,
+                },
+            };
+            L.control.layers(
+                layer_control_20fbc966ac411247185cd1dcd723c724.base_layers,
+                layer_control_20fbc966ac411247185cd1dcd723c724.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_998ee19652bce7d9510e860a9801ca1d);
+            tile_layer_57a19538bcd14c6d321488982bc28fec.remove();
+            tile_layer_54afa2573503214183fe833e3fa5f804.remove();
+            tile_layer_49eb7607c7412ed60cfc8c3ce8541846.remove();
+            tile_layer_d3989ff65700c0f2b87d4c412df286f4.remove();
+            tile_layer_5d7c0af0a98c01fc5a2da5fe98bfc227.remove();
+            tile_layer_9c35af2e3ef8ebbf0a2987182eeacb65.remove();
+            tile_layer_49d3c750e529603221d60437ac8f2a81.remove();
+            tile_layer_a8884e63b188724a8ebdda7a0dc254f2.remove();
+            tile_layer_39da6cf70664b5ea6d9189673076e046.remove();
+        
+</script>
